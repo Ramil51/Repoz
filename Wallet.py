@@ -23,12 +23,11 @@ class Database():
     def __init__(self, dict1, name, balance):
         self.dict1 = dict()
         self.name = name
-        # self.surname = surname
         self.balance = balance
         self.customer = Customer(self.name, self.balance)
 
     def get_info(self):
-        dict1 = {'Имя:': '','Баланс:':' '}
+        dict1 = {'Имя:': '','Баланс:':''}
         self.dict1[self.name] = input('Имя:')
         self.dict1[self.balance] = input('Баланс:')
         return dict1
